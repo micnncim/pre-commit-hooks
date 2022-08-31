@@ -18,3 +18,13 @@
   types: [text]
   files: "\\.(rst|md|markdown|mdown|mkdn)$"
   minimum_pre_commit_version: 0.15.0
+
+# https://github.com/koalaman/shellcheck
+- id: shellcheck
+  name: shellcheck
+  description: Static analysis tool for shell scripts
+  entry: shellcheck
+  args: []
+  language: system
+  files: "\\.(sh|bash)$"
+  types: [text]
