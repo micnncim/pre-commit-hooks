@@ -38,3 +38,13 @@
   language: system
   files: "\\.(sh|bash)$"
   types: [text]
+
+# https://github.com/adrienverge/yamllint
+- id: yamllint
+  name: yamllint
+  description: This hook runs yamllint.
+  entry: yamllint
+  args: []
+  language: system
+  files: "\\.(yaml|yml)$"
+  types: [text]
