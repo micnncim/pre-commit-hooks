@@ -28,3 +28,13 @@
   language: system
   files: "\\.(sh|bash)$"
   types: [text]
+
+# https://github.com/mvdan/sh
+- id: shfmt
+  name: shfmt
+  description: Shell formatter
+  entry: shfmt
+  args: [-l -w]
+  language: system
+  files: "\\.(sh|bash)$"
+  types: [text]
