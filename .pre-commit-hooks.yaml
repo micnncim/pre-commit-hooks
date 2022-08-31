@@ -7,3 +7,14 @@
   language: system
   types: [text]
   files: "\\.(rst|md|markdown|mdown|mkdn)$"
+
+# https://github.com/igorshubovych/markdownlint-cli
+- id: markdownlint
+  name: markdownlint
+  description: Checks the style of Markdown/Commonmark files.
+  entry: markdownlint
+  args: [--fix]
+  language: system
+  types: [text]
+  files: "\\.(rst|md|markdown|mdown|mkdn)$"
+  minimum_pre_commit_version: 0.15.0
